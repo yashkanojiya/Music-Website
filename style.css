@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap');
 
 :root{
-  --main-color:#022988;
-  --primary-color: #ef5068;
-  --black:#13131a;
-  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  --main-color: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  --primary-color: linear-gradient(135deg, #8e44ad, #3498db);
+  --black: #1b1b2f;
+  --box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
 }
 
 *{
@@ -101,7 +101,9 @@ section{
   background: #f0f4ff;
   box-shadow: var(--box-shadow);
 }
-
+.header span {
+  text-transform: lowercase;
+}
 .header .logo{
   font-size: 2.5rem;
   font-weight: bolder;
@@ -286,13 +288,13 @@ section{
 
 /* shop */
 
-.shop .box-container{
+.album .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
 }
 
-.shop .box-container .box{
+.album .box-container .box{
   background: #fff;
   border-radius: .5rem;
   box-shadow: var(--box-shadow);
@@ -301,27 +303,27 @@ section{
   text-align: center;
 }
 
-.shop .box-container .box .image{
+.album .box-container .box .image{
   position: relative;
   overflow: hidden;
 }
 
-.shop .box-container .box .image img{
+.album .box-container .box .image img{
   width: 100%;
 }
 
-.shop .box-container .box:hover .image .share{
+.album .box-container .box:hover .image .share{
   bottom: 0;
 }
 
-.shop .box-container .box .image .share{
+.album .box-container .box .image .share{
   position: absolute;
   bottom: -10rem; left: 0; right: 0;
   padding: 2rem;
   background: rgba(242,242,242,.6);
 }
 
-.shop .box-container .box .image .share a{
+.album .box-container .box .image .share a{
   height: 4rem;
   width: 4rem;
   line-height: 4rem;
@@ -332,23 +334,23 @@ section{
   border-radius: .5rem;
 }
 
-.shop .box-container .box .image .share a:hover{
+.album .box-container .box .image .share a:hover{
   color: var(--primary-color);
   background: #fff;
 }
 
-.shop .box-container .box .content{
+.album .box-container .box .content{
   padding: 2rem;
   padding-top: 1rem;
   align-items: center;
 }
 
-.shop .box-container .box .content h3{
+.album .box-container .box .content h3{
   font-size: 2rem;
   color: var(--black);
 }
 
-.shop .box-container .box .content h5{
+.album .box-container .box .content h5{
   font-size: 1.7rem;
   line-height: 2;
   color: #777;
