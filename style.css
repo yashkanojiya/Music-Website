@@ -565,7 +565,7 @@ section{
   background: none;
   color: var(--black);
   text-transform: none;
-  border: .1rem solid var(--primary-color);
+  border: .1rem solid ;
 }
 
 .subscribe .row .inputBox .btn{
